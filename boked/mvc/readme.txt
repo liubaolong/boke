@@ -1,3 +1,4 @@
+﻿一个轻量级的自主封装的mvc框架制作的个人博客
 app     admin 后台模块 controller blog 博文控制器
 					 			 index后台控制器
 								 user用户控制器 
