@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+        <title>Simple example - Editor.md examples</title>
+        <link rel="stylesheet" href="__PUBLIC_PATH__editor.md/examples/css/style.css" />
+        <link rel="stylesheet" href="__PUBLIC_PATH__editor.md/css/editormd.css" />
+        
+</head>
+<body>
+	<div id="test-editormd">
+		<form action="index.php?m=index&c=blog&a=insertAc">
+         <textarea style="display:none;" name="con"></textarea>
+         </form>
+    </div>
+
+</body>
+</html>
+<script src="__PUBLIC_PATH__editor.md/examples/js/jquery.min.js"></script>
+        <script src="__PUBLIC_PATH__editor.md/editormd.min.js"></script>
+        <script type="text/javascript">
+			var testEditor;
+
+            $(function() {
+                testEditor = editormd("test-editormd", {
+                    width   : "60%",
+                    height  : 500,
+                    syncScrolling : "single",
+                    path    : "__PUBLIC_PATH__editor.md/lib/"
+                });
+                
+                
+                // or
+                // testEditor = editormd({
+                //     id      : "test-editormd",
+                //     width   : "90%",
+                //     height  : 640,
+                //     path    : "../lib/"
+                // });
+                
+            });
+        </script>
